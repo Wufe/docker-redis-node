@@ -9,7 +9,6 @@ Image built from [Sam Marsh's guide](http://www.everybodyhertz.co.uk/creating-a-
 ### Execute
 
 **Simple start**
-`docker pull kesshin/redis-node`  
 `docker run -d --name redis-node -p 6379:6379 kesshin/redis-node`
 
 **Manual build**
@@ -25,7 +24,6 @@ Don't forget to **change root password**:
 ### Configure
 
 **SSH configuration**
-
 SSH Root login is disabled by default.  
 You can override default sshd configurations:  
 `docker run -d --name redis-node -p 6379:6379 -v /path/to/my/sshd_config:/etc/ssh/sshd_config kesshin/redis-node`
